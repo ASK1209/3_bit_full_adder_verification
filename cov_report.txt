@@ -1,0 +1,240 @@
++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++       REPORT INFO       ++++++++++
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+SUMMARY
+==================================================
+|     Property     |            Value            |
+==================================================
+| User             | runner                      |
+| Host             | 19b78fa82ee0                |
+| Tool             | Riviera-PRO 2025.04         |
+| Report file      | /home/runner/cov_report.txt |
+| Report date      | 2026-02-23 09:53            |
+| Report arguments |                             |
+| Input file       | /home/runner/coverage.acdb  |
+| Input file date  | 2026-02-23 09:53            |
+| Number of tests  | 1                           |
+==================================================
+
+
+TEST DETAILS
+==============================================
+| Property |              Value              |
+==============================================
+| Test     | coverage.acdb:coverage          |
+| Status   | Ok                              |
+| Args     | asim +access+r full_adder_tb    |
+| Simtime  | 300 ns                          |
+| Cputime  | 0.261 s                         |
+| Seed     | 1                               |
+| Date     | 2026-02-23 09:53                |
+| User     | runner                          |
+| Host     | 19b78fa82ee0                    |
+| Host os  | Linux64                         |
+| Tool     | Riviera-PRO 2025.04 (simulator) |
+==============================================
+
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++     DESIGN HIERARCHY    ++++++++++
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CUMULATIVE SUMMARY
+=============================================
+|    Coverage Type    | Weight | Hits/Total |
+=============================================
+| Covergroup Coverage |      1 |    77.148% |
+|---------------------|--------|------------|
+| Types               |        |      0 / 1 |
+=============================================
+CUMULATIVE INSTANCE-BASED COVERAGE: 77.148%
+COVERED INSTANCES: 0 / 1
+FILES: 1
+
+
+INSTANCE - /full_adder_tb : work.full_adder_tb
+
+
+    SUMMARY
+    ==========================================================================
+    |    Coverage Type    | Weight | Local Hits/Total | Recursive Hits/Total |
+    ==========================================================================
+    | Covergroup Coverage |      1 |          77.148% |              77.148% |
+    |---------------------|--------|------------------|----------------------|
+    | Types               |        |            0 / 1 |                0 / 1 |
+    ==========================================================================
+    WEIGHTED AVERAGE LOCAL: 77.148%
+    WEIGHTED AVERAGE RECURSIVE: 77.148%
+
+
+    COVERGROUP COVERAGE
+    ===================================================================
+    |          Covergroup           |   Hits   |  Goal /  |  Status   |
+    |                               |          | At Least |           |
+    ===================================================================
+    | TYPE /full_adder_tb/cg        |  77.148% | 100.000% | Uncovered |
+    ===================================================================
+    | INSTANCE <UNNAMED1>           |  77.148% | 100.000% | Uncovered |
+    |-------------------------------|----------|----------|-----------|
+    | COVERPOINT <UNNAMED1>::cp_a   | 100.000% | 100.000% | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | bin auto[0]                   |        2 |        1 | Covered   |
+    | bin auto[1]                   |        5 |        1 | Covered   |
+    | bin auto[2]                   |        3 |        1 | Covered   |
+    | bin auto[3]                   |        4 |        1 | Covered   |
+    | bin auto[4]                   |        3 |        1 | Covered   |
+    | bin auto[5]                   |        4 |        1 | Covered   |
+    | bin auto[6]                   |        5 |        1 | Covered   |
+    | bin auto[7]                   |        4 |        1 | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | COVERPOINT <UNNAMED1>::cp_b   |  87.500% | 100.000% | Uncovered |
+    |-------------------------------|----------|----------|-----------|
+    | bin auto[0]                   |        5 |        1 | Covered   |
+    | bin auto[1]                   |        5 |        1 | Covered   |
+    | bin auto[2]                   |        1 |        1 | Covered   |
+    | bin auto[3]                   |        6 |        1 | Covered   |
+    | bin auto[4]                   |        5 |        1 | Covered   |
+    | bin auto[5]                   |        5 |        1 | Covered   |
+    | bin auto[6]                   |        0 |        1 | Zero      |
+    | bin auto[7]                   |        3 |        1 | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | COVERPOINT <UNNAMED1>::cp_cin | 100.000% | 100.000% | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | bin auto[0]                   |       13 |        1 | Covered   |
+    | bin auto[1]                   |       17 |        1 | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | CROSS <UNNAMED1>::cross_all   |  21.093% | 100.000% | Uncovered |
+    |-------------------------------|----------|----------|-----------|
+    | bin <auto[0],auto[1],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[0],auto[5],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[1],auto[0],auto[1]> |        2 |        1 | Covered   |
+    | bin <auto[1],auto[1],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[1],auto[4],auto[0]> |        2 |        1 | Covered   |
+    | bin <auto[2],auto[1],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[2],auto[3],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[2],auto[5],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[3],auto[1],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[3],auto[4],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[3],auto[5],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[3],auto[7],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[4],auto[0],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[4],auto[3],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[4],auto[4],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[5],auto[1],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[5],auto[2],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[5],auto[3],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[5],auto[7],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[6],auto[0],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[6],auto[0],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[6],auto[3],auto[1]> |        2 |        1 | Covered   |
+    | bin <auto[6],auto[5],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[7],auto[3],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[7],auto[4],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[7],auto[5],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[7],auto[7],auto[0]> |        1 |        1 | Covered   |
+    ===================================================================
+
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++       DESIGN UNITS      ++++++++++
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CUMULATIVE SUMMARY
+=============================================
+|    Coverage Type    | Weight | Hits/Total |
+=============================================
+| Covergroup Coverage |      1 |    77.148% |
+|---------------------|--------|------------|
+| Types               |        |      0 / 1 |
+=============================================
+CUMULATIVE DESIGN-BASED COVERAGE: 77.148%
+COVERED DESIGN UNITS: 0 / 1
+FILES: 1
+
+
+MODULE - work.full_adder_tb
+
+
+    SUMMARY
+    =============================================
+    |    Coverage Type    | Weight | Hits/Total |
+    =============================================
+    | Covergroup Coverage |      1 |    77.148% |
+    |---------------------|--------|------------|
+    | Types               |        |      0 / 1 |
+    =============================================
+    WEIGHTED AVERAGE: 77.148%
+
+
+    COVERGROUP COVERAGE
+    ===================================================================
+    |          Covergroup           |   Hits   |  Goal /  |  Status   |
+    |                               |          | At Least |           |
+    ===================================================================
+    | TYPE /full_adder_tb/cg        |  77.148% | 100.000% | Uncovered |
+    ===================================================================
+    | INSTANCE <UNNAMED1>           |  77.148% | 100.000% | Uncovered |
+    |-------------------------------|----------|----------|-----------|
+    | COVERPOINT <UNNAMED1>::cp_a   | 100.000% | 100.000% | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | bin auto[0]                   |        2 |        1 | Covered   |
+    | bin auto[1]                   |        5 |        1 | Covered   |
+    | bin auto[2]                   |        3 |        1 | Covered   |
+    | bin auto[3]                   |        4 |        1 | Covered   |
+    | bin auto[4]                   |        3 |        1 | Covered   |
+    | bin auto[5]                   |        4 |        1 | Covered   |
+    | bin auto[6]                   |        5 |        1 | Covered   |
+    | bin auto[7]                   |        4 |        1 | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | COVERPOINT <UNNAMED1>::cp_b   |  87.500% | 100.000% | Uncovered |
+    |-------------------------------|----------|----------|-----------|
+    | bin auto[0]                   |        5 |        1 | Covered   |
+    | bin auto[1]                   |        5 |        1 | Covered   |
+    | bin auto[2]                   |        1 |        1 | Covered   |
+    | bin auto[3]                   |        6 |        1 | Covered   |
+    | bin auto[4]                   |        5 |        1 | Covered   |
+    | bin auto[5]                   |        5 |        1 | Covered   |
+    | bin auto[6]                   |        0 |        1 | Zero      |
+    | bin auto[7]                   |        3 |        1 | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | COVERPOINT <UNNAMED1>::cp_cin | 100.000% | 100.000% | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | bin auto[0]                   |       13 |        1 | Covered   |
+    | bin auto[1]                   |       17 |        1 | Covered   |
+    |-------------------------------|----------|----------|-----------|
+    | CROSS <UNNAMED1>::cross_all   |  21.093% | 100.000% | Uncovered |
+    |-------------------------------|----------|----------|-----------|
+    | bin <auto[0],auto[1],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[0],auto[5],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[1],auto[0],auto[1]> |        2 |        1 | Covered   |
+    | bin <auto[1],auto[1],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[1],auto[4],auto[0]> |        2 |        1 | Covered   |
+    | bin <auto[2],auto[1],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[2],auto[3],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[2],auto[5],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[3],auto[1],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[3],auto[4],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[3],auto[5],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[3],auto[7],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[4],auto[0],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[4],auto[3],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[4],auto[4],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[5],auto[1],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[5],auto[2],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[5],auto[3],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[5],auto[7],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[6],auto[0],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[6],auto[0],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[6],auto[3],auto[1]> |        2 |        1 | Covered   |
+    | bin <auto[6],auto[5],auto[1]> |        1 |        1 | Covered   |
+    | bin <auto[7],auto[3],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[7],auto[4],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[7],auto[5],auto[0]> |        1 |        1 | Covered   |
+    | bin <auto[7],auto[7],auto[0]> |        1 |        1 | Covered   |
+    ===================================================================
+
+
