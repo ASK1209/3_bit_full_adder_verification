@@ -30,3 +30,9 @@ The testbench uses a modern SystemVerilog approach:
 
 ## 🛡️ Assertions in Action
 The testbench is designed to "fail-fast." If the RTL logic deviates from the mathematical expected value by even one bit, the simulation will flag an `ERROR` in the log with the exact timestamp and signal values.
+
+## 👩‍💻 Author
+
+**Ahalya Sivakumar**  
+Design Verification Engineer  
+SystemVerilog | SVA | Functional Coverage | UVM (Learning)
